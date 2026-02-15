@@ -24,7 +24,7 @@ The upstream project (Project NANDA) declares an MIT License in its `README.md`,
 
 ## Purpose
 
-KYM uses the AgentFacts JSON schema as the canonical format for agent metadata served via `/api/agents/:id/facts`. This fork allows Nexartis to:
+KYM uses the AgentFacts JSON schema as the canonical format for agent metadata served via `/api/agents/{id}/facts`. This fork allows Nexartis to:
 - Reference the schema for validating AgentFacts payloads
 - Propose KYM-specific extensions (e.g. `trustScore`, `gitVerified`) for upstream review
 - Track upstream schema evolution
@@ -53,9 +53,10 @@ git push origin dev
 ## Contributing Back Upstream
 
 If you make changes that would benefit the upstream project:
-1. Create a branch from upstream's `main`: `git checkout -b fix/my-change upstream/main`
-2. Make your changes, commit, and push to origin
-3. Open a PR on [projnanda/agentfacts-format](https://github.com/projnanda/agentfacts-format/pulls) from `Nexartis:fix/my-change`
+1. Ensure the `upstream` remote is configured and fetched (see [Syncing with Upstream](#syncing-with-upstream) above)
+2. Create a branch from upstream's `main`: `git checkout -b fix/my-change upstream/main`
+3. Make your changes, commit, and push to origin
+4. Open a PR on [projnanda/agentfacts-format](https://github.com/projnanda/agentfacts-format/pulls) from `Nexartis:fix/my-change`
 
 ## Nexartis-Specific Changes
 
