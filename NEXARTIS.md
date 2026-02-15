@@ -4,7 +4,7 @@ This fork is maintained by [Nexartis](https://github.com/Nexartis) for [KnowYour
 
 ## License
 
-This project is licensed under the **MIT License** per the upstream project (Project NANDA). The upstream repo's `README.md` states "MIT License" but does not include a dedicated `LICENSE` file. All upstream copyright and license notices are preserved per MIT requirements.
+The upstream project (Project NANDA) declares an MIT License in its `README.md`, though no dedicated `LICENSE` file is present in the upstream repository. Nexartis preserves all upstream copyright and license notices per MIT requirements.
 
 ## Upstream
 
@@ -38,7 +38,8 @@ KYM uses the AgentFacts JSON schema as the canonical format for agent metadata s
 ## Syncing with Upstream
 
 ```bash
-# One-time setup (already done):
+# One-time setup (skip if upstream remote already exists):
+# Check with: git remote -v
 git remote add upstream https://github.com/projnanda/agentfacts-format.git
 
 # Sync upstream changes into dev:
